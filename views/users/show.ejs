@@ -9,8 +9,8 @@
       <div>
       <span><%= user.firstName %></span>
       <span><%= user.lastName %></span>
-      <span><%= user.email %></span>
-      <span><%= user.dob %></span>
+      <p><%= user.email %></p>
+      <p><%= moment(user.dob).format('MM DD YYYY') %></p>
       
       <a href="<%= '/users/' + user.id + '/edit'%>">Edit</a>
       <a href='/users'>Home</a>

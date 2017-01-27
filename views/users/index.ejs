@@ -9,10 +9,11 @@
     <a href='/users/new'>Create a new fazbook</a>
     <% users.forEach(function(user) { %>
       <div>
+      <!-- link to users page specific to user name clicked on -->
       <a href="<%= '/users/' + user.id%>"><%= user.firstName %></a>
-      <!-- Like watching your parents have sex --Paris -->
+      <!-- this is where the magic happens -->
       <form action="<%= '/users/' + user.id + '?_method=DELETE' %>" method="POST">
-      <input type="submit" value="x">
+      <input type="submit" value="DELETE">
       </form>
       </div>
    <% }) %>
