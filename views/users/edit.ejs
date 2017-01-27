@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Edit <%= user.firstName %>'s Fazbook</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+<h1>Edit <%= user.firstName %>'s Fazbook</h1>
     <form action="<%= '/users/' + user.id + '?_method=PUT' %>" method="POST">
     <label >
     Email
