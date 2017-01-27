@@ -7,6 +7,6 @@
         "dialect": "postgres"
     },
     "production": {
-        "use_env_variable": "https://intense-cliffs-95427.herokuapp.com/"
+        "use_env_variable": "DATABASE_URL"
     }
 }
