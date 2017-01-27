@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to fazbook</h1>
+      <div>
+      <span><%= user.firstName %></span>
+      <span><%= user.lastName %></span>
+      <span><%= user.email %></span>
+      <span><%= user.dob %></span>
+      
+      <a href="<%= '/users/' + user.id + '/edit'%>">Edit</a>
+      </div>
+  </body>
+</html>

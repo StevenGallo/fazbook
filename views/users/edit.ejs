@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <form action="<%= '/users/' + user.id + '?_method=PUT' %>" method="POST">
+    <label >
+    Email
+    <input type="text" name="email" value="<%= user.email %>">
+    </label>
+    <label >
+    First
+    <input type="text" name="firstName" value="<%= user.firstName %>">
+    </label>
+    <label >
+    Last
+    <input type="text" name="lastName" value="<%= user.lastName %>">
+    </label>
+    <label >
+    Date of Birth
+    <input type="date" name="dob" value="<%= user.dob %>">
+    </label>
+    <input type="submit" value="Update User">
+    </form>
+</body>
+</html>
